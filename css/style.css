@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    background: #0b0d31;
+    color: white;
+}
+header {
+    width: 100%;
+    text-align: center;
+}
+/*-------------------------------------------------------------------Logo------------------------------------------------------------------*/
+.logo {
+    background:#8f3b0ad8;
+}
+#logo {
+    animation: fill 0.8s ease forwards 4.2s;
+}
+#logo :nth-child(1){
+    stroke-dasharray: 1222;
+    stroke-dashoffset: 1222;
+    animation: line-anime 2s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: line-anime 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 752;
+    stroke-dashoffset: 752;
+    animation: line-anime 2s ease forwards 0.6s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: line-anime 2s ease forwards 0.9s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 496;
+    stroke-dashoffset: 496;
+    animation: line-anime 2s ease forwards 1.2s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: line-anime 2s ease forwards 1.5s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 716;
+    stroke-dashoffset: 716;
+    animation: line-anime 2s ease forwards 1.8s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 753;
+    stroke-dashoffset: 753;
+    animation: line-anime 2s ease forwards 2.1s;
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 816;
+    stroke-dashoffset: 816;
+    animation: line-anime 2s ease forwards 2.4s;
+}
+
+@keyframes line-anime {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent;
+    } to {
+        fill: rgba(255, 255, 255, 0.205);
+    }
+}
+/*-------------------------------------------------------------Nav----------------------------------------------------------------------*/
+nav {
+    background: brown;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+}
+input {
+    align-items: center;
+    border-radius: 0.7em;
+    border: none;
+    margin: 0.2vw;
+}
+/*--------------------------------------------------------Cartes--------------------------------------------------------------------------*/
+.container-card {
+    padding: 2vw 5vw 2vw 3vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(12vw,1fr));
+}
+.card {
+    background: linear-gradient( to bottom left, #b68484, #a71b1b);
+    width: 15vw;
+    height: 22vw;
+    border: white 2px solid;
+    position: relative;
+    overflow: hidden;
+    box-shadow: -40px 0 40px black;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.card:hover {
+    transition: all 0.5s ease;
+    transform: translateX(-1vw) scale(1.15);
+}
+.card:hover + .card {
+    transition: all 0.5s ease;
+    transform: translateX(5vw);
+}
+img {
+    width: 100%;
+}
+div {
+    overflow-y: hidden;
+}
+.card :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5vw;
+    color: black;
+}
+p{
+    font-weight: bolder;
+}
+/*-------------------------------------------------------Catégories----------------------------------------------------------------------*/
+h1 {
+    text-align: center;
+}
+.container-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+    row-gap: 2vw;
+    padding: 2vw;
+}
+
+.categorie1 {
+    background: url(../img/Gus-petit-oiseau-grand-voyage.jpg) center/100% no-repeat;
+    height: 20vw;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.filtre1{
+    background:lawngreen;
+    
+}
+.categorie2 {
+    background: url(../img/sun.jpg) center/100%;
+    height: 20vw;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.filtre2 {
+    background: lightcoral;
+}
+.categorie3 {
+    background: url(../img/consciousness.jpg) center/100% no-repeat;
+    height: 20vw;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.filtre3 {
+    background: lightskyblue;
+}
+.categorie4 {
+    background: url(../img/tears.webp) center/100%;
+    height: 20vw;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.filtre4 {
+    background: magenta;
+}
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*---------------------------------------------------------------------Footer------------------------------------------------------------*/
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

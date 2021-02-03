@@ -5,8 +5,13 @@
     overflow-x: hidden;
 }
 body {
-    background: #0b0d31;
     color: white;
+}
+#canvasfond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 header {
     width: 100%;
@@ -14,7 +19,7 @@ header {
 }
 /*-------------------------------------------------------------------Logo------------------------------------------------------------------*/
 .logo {
-    background:#8f3b0ad8;
+    background:#402A1E;
 }
 #logo {
     animation: fill 0.8s ease forwards 4.2s;
@@ -141,6 +146,24 @@ div {
 p{
     font-weight: bolder;
 }
+.card1 {
+    background: linear-gradient(to left, #8FB786, #D1755D);
+}
+.card2 {
+    background: linear-gradient(to left, #8FB786, #D1755D);
+}
+.card3 {
+    background: linear-gradient(to left, #8FB786, #D1755D);
+}
+.card4 {
+    background: linear-gradient(to left, #8FB786, #D1755D);
+}
+.card5 {
+    background: linear-gradient(to left, #8FB786, #D1755D);
+}
+.card6 {
+    background: linear-gradient(to left, #8FB786, #D1755D);
+}
 /*-------------------------------------------------------Catégories----------------------------------------------------------------------*/
 h1 {
     text-align: center;
@@ -154,49 +177,44 @@ h1 {
 }
 
 .categorie1 {
-    background: url(../img/Gus-petit-oiseau-grand-voyage.jpg) center/100% no-repeat;
+    background-image: linear-gradient(to right, #87be43b9, #b06dd7c0),url(../img/Gus-petit-oiseau-grand-voyage.jpg);
+    background-size: cover;
     height: 20vw;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.filtre1{
-    background:lawngreen;
-    
+    cursor: pointer;
 }
 .categorie2 {
-    background: url(../img/sun.jpg) center/100%;
+    background-image: linear-gradient(to right, #694eaec7, #37cf9ac9), url(../img/sun.jpg);
+    background-size: cover;
     height: 20vw;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.filtre2 {
-    background: lightcoral;
+    cursor: pointer;
 }
 .categorie3 {
-    background: url(../img/consciousness.jpg) center/100% no-repeat;
+    background: linear-gradient(to left, #22ccc1c9, #2f48e9c9), url(../img/consciousness.jpg);
+    background-size: cover;
     height: 20vw;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.filtre3 {
-    background: lightskyblue;
+    cursor: pointer;
 }
 .categorie4 {
-    background: url(../img/tears.webp) center/100%;
+    background-image: linear-gradient(to right, #af7373d2, #c22c54d0), url(../img/tears.webp);
+    background-size: cover;
     height: 20vw;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.filtre4 {
-    background: magenta;
+    cursor: pointer;
 }
 h2 {
     text-align: center;
